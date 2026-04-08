@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="CYBER ZULFIQAR UNDER COVER AGENCY">
+    <meta property="og:title" content="Hacked By CYBER ZULFIQAR UNDER COVER AGENCY">
+    <meta property="og:description" content="System Compromised By CYBER ZULFIQAR UNDER COVER AGENCY">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Hacked By CYBER ZULFIQAR UNDER COVER AGENCY">
+    <meta name="keywords" content="CYBER ZULFIQAR UNDER COVER AGENCY, Hacked">
+    
+    <title>Hacked By CYBER ZULFIQAR UNDER COVER AGENCY</title>
+
+    <!-- Advanced Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@700;900&family=Black+Ops+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+            font-family: 'Share Tech Mono', monospace;
+            overflow-x: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            cursor: crosshair; 
+        }
+
+        /* --- Background Matrix Canvas --- */
+        #canvas-bg {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            z-index: 0;
+            opacity: 0.5;
+        }
+
+        /* --- CRT Scanlines Effect --- */
+        .scanlines {
+            background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+            background-size: 100% 3px, 3px 100%;
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            z-index: 9998;
+            pointer-events: none;
+        }
+
+        /* --- Vignette Effect --- */
+        .vignette {
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: radial-gradient(circle, rgba(0,0,0,0) 40%, rgba(0,0,0,0.9) 100%);
+            z-index: 9997;
+            pointer-events: none;
+        }
+
+        /* --- Main Content --- */
+        #main-content {
+            position: relative;
+            z-index: 10;
+            width: 90%;
+            max-width: 850px;
+            text-align: center;
+            padding: 20px 0;
+            animation: fadeIn 2s ease-out forwards;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* --- Holographic Logo Container --- */
+        .logo-container {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        /* --- Logo & Hard Glitch Image Effect (No White Blink) --- */
+        .logo-img {
+            width: 260px;
+            height: 260px;
+            border-radius: 50%;
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.3), inset 0 0 10px rgba(0, 255, 255, 0.2);
+            border: 2px solid #555;
+            position: relative;
+            z-index: 1;
+            background: #000; 
+            animation: hard-glitch 3s infinite;
+        }
+
+        /* New Glitch Animation without white invert/blink */
+        @keyframes hard-glitch {
+            0% { transform: scale(1) skew(0deg); filter: none; }
+            5% { transform: scale(1) skew(0deg); }
+            6% { transform: skew(-5deg) translate(-2px, 2px); filter: drop-shadow(4px 0 red); }
+            7% { transform: skew(5deg) translate(2px, -2px); filter: drop-shadow(-4px 0 cyan); }
+            8% { transform: scale(1); filter: none; }
+            
+            60% { transform: translate(-3px, 0); }
+            62% { transform: translate(3px, 0); filter: drop-shadow(3px 0 red) drop-shadow(-3px 0 cyan); }
+            64% { transform: translate(0, 0); filter: none; }
+            
+            100% { transform: scale(1); }
+        }
+
+        /* --- Agency Title --- */
+        .agency-title {
+            font-family: 'Black Ops One', system-ui;
+            color: #fff;
+            font-size: 45px;
+            text-shadow: 3px 3px 0px red, -3px -3px 0px cyan;
+            margin: 10px 0;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            animation: text-glitch 2s infinite linear alternate-reverse;
+        }
+
+        @keyframes text-glitch {
+            0% { text-shadow: 2px 2px red, -2px -2px cyan; transform: translate(0); }
+            20% { text-shadow: -2px -2px red, 2px 2px cyan; transform: translate(-2px, 2px); }
+            40% { text-shadow: 2px -2px red, -2px 2px cyan; transform: translate(2px, -2px); }
+            60% { text-shadow: -2px 2px red, 2px -2px cyan; transform: translate(-2px, -2px); }
+            80% { text-shadow: 2px 2px red, -2px -2px cyan; transform: translate(2px, 2px); }
+            100% { text-shadow: -2px -2px red, 2px 2px cyan; transform: translate(0); }
+        }
+
+        /* Subtitle */
+        .subtitle {
+            font-family: 'Orbitron', sans-serif;
+            color: #ff0000;
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: 5px;
+            margin-bottom: 25px;
+            text-shadow: 0 0 10px red;
+        }
+
+        /* Typewriter text */
+        .typing-container {
+            font-size: 17px;
+            color: #d1d1d1;
+            line-height: 1.8;
+            min-height: 160px;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        .highlight-red { color: #ff0000; font-weight: bold; text-shadow: 0 0 5px red; }
+        .highlight-cyan { color: #00FFFF; font-weight: bold; text-shadow: 0 0 5px cyan; }
+
+        /* Marquee Text */
+        .marquee-box {
+            font-size: 16px;
+            color: #FFFF00;
+            font-style: italic;
+            margin-bottom: 30px;
+            text-shadow: 0 0 5px rgba(255, 255, 0, 0.5);
+            padding: 12px;
+            border-top: 1px solid #444;
+            border-bottom: 1px solid #444;
+            letter-spacing: 1px;
+        }
+
+        /* Facebook Button */
+        .fb-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: transparent;
+            border: 2px solid #00FFFF;
+            border-radius: 5px;
+            padding: 12px 25px;
+            text-decoration: none;
+            color: #00FFFF;
+            font-size: 1.2em;
+            font-family: 'Orbitron', sans-serif;
+            transition: 0.3s;
+            box-shadow: 0 0 10px rgba(0, 255, 255, 0.4), inset 0 0 10px rgba(0, 255, 255, 0.2);
+            position: relative;
+            z-index: 20;
+        }
+
+        .fb-button:hover {
+            background-color: #00FFFF;
+            color: #000;
+            box-shadow: 0 0 20px #00FFFF, 0 0 40px #00FFFF;
+            transform: translateY(-3px);
+        }
+
+        .fb-button i { margin-right: 12px; font-size: 1.4rem; }
+
+        .divider {
+            width: 70%;
+            height: 1px;
+            background: #ff0000;
+            margin: 20px auto;
+            box-shadow: 0 0 10px #ff0000;
+        }
+
+        .click-hint {
+            font-size: 12px;
+            color: #555;
+            margin-top: 15px;
+            animation: blink-text 1s infinite;
+        }
+
+        @keyframes blink-text { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+
+        @media (max-width: 600px) {
+            .agency-title { font-size: 26px; }
+            .logo-img { width: 200px; height: 200px; }
+            .subtitle { font-size: 16px; }
+            .typing-container { font-size: 14px; min-height: 220px; }
+            .fb-button { font-size: 1em; padding: 10px 15px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Overlays -->
+    <div class="scanlines"></div>
+    <div class="vignette"></div>
+
+    <!-- Audio Element -->
+    <audio id="bg-music" loop>
+        <source src="https://mega.nz/file/D4ZAlIbR#LkR92DAUlBPsqMz5FkGbzsHApbPZGoLoBkwmjeawKAI" type="audio/mpeg">
+    </audio>
+
+    <!-- Canvas Matrix Background -->
+    <canvas id="canvas-bg"></canvas>
+
+    <!-- Main Content -->
+    <div id="main-content">
+        
+        <!-- Logo Container -->
+        <div class="logo-container">
+            <img src="https://i.ibb.co.com/Qjbzjds3/Black-Red-Simple-Y2-K-Streetwear-Logo-2.png" alt="TEAM-CZUCA Logo" class="logo-img">
+        </div>
+        
+        <h1 class="agency-title">Hacked By CYBER ZULFIQAR UNDER COVER AGENCY</h1>
+        
+        <div class="divider"></div>
+        
+        <div class="subtitle">TARGET ACQUIRED & COMPROMISED</div>
+
+        <div class="typing-container" id="typing-text"></div>
+        
+        <div class="marquee-box">
+            <marquee behavior="scroll" scrollamount="8" direction="left">
+                To the oppressors: We witness the suffering of the innocent. You turn homes into rubble and dreams into ashes. But every injustice echoes in the digital realm. We are CYBER ZULFIQAR UNDER COVER AGENCY. We bring the war to your cyberspace. Your networks will fall, your data will vanish. We are the digital resistance. Expect Us.
+            </marquee>
+        </div>
+
+        <div class="divider" style="width: 40%; background: #444; box-shadow: none;"></div>
+
+        <a class="fb-button" href="https://www.facebook.com/CyberZulfiqarUnderCoverAgency" target="_blank">
+            <i class="fab fa-facebook-f"></i> CYBER ZULFIQAR UNDER COVER AGENCY
+        </a>
+
+        <!-- Hint for Audio -->
+        <div class="click-hint">[ Click anywhere on the screen to initialize System ]</div>
+    </div>
+
+    <script>
+        // --- Pre-load Voices ---
+        if ('speechSynthesis' in window) {
+            window.speechSynthesis.onvoiceschanged = function() {
+                window.speechSynthesis.getVoices();
+            };
+        }
+
+        let initialized = false;
+        let audioCtx;
+
+        document.body.addEventListener('click', function() {
+            if (initialized) return;
+            initialized = true;
+
+            // 1. Play Background Music
+            const bgAudio = document.getElementById('bg-music');
+            if (bgAudio.paused) {
+                bgAudio.volume = 0.8;
+                bgAudio.play().catch(e => console.log("Audio play blocked"));
+            }
+            document.querySelector('.click-hint').style.display = 'none';
+
+            // 2. Play Robust Deep Voice
+            if ('speechSynthesis' in window) {
+                window.speechSynthesis.cancel(); // Stop any frozen instances
+                
+                const msg = new SpeechSynthesisUtterance();
+                msg.text = "System Administrator. Your network has been compromised by CYBER ZULFIQAR UNDER COVER AGENCY. All your data belongs to us. Expect us.";
+                
+                msg.lang = 'en-US';
+                msg.volume = 1;
+                msg.rate = 0.85; 
+                // পিচ 0.1 বা 0.2 দিলে ব্রাউজার মিউট করে দেয়, তাই 0.4 দেওয়া হলো যা ডিপ কিন্তু সেফ।
+                msg.pitch = 0.4; 
+                
+                let voices = window.speechSynthesis.getVoices();
+                if(voices.length > 0) {
+                    // ব্রিটিশ বা ইউএস ইংরেজি সিলেক্ট করা হচ্ছে যাতে ক্লিয়ার শোনা যায়
+                    let selectedVoice = voices.find(v => v.lang.includes('en-GB') || v.lang.includes('en-UK')) || 
+                                        voices.find(v => v.lang.includes('en-US')) || 
+                                        voices[0];
+                    if (selectedVoice) {
+                        msg.voice = selectedVoice;
+                    }
+                }
+
+                window.speechSynthesis.speak(msg);
+            }
+
+            // 3. Setup Web Audio API for Glitch Sounds
+            audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+            
+            setInterval(() => {
+                if (Math.random() > 0.6) playGlitchSound();
+            }, 3500);
+
+        }, { once: true });
+
+        // --- Glitch Sound Generator ---
+        function playGlitchSound() {
+            if (!audioCtx) return;
+            if (audioCtx.state === 'suspended') audioCtx.resume();
+            
+            const osc = audioCtx.createOscillator();
+            const gainNode = audioCtx.createGain();
+            
+            osc.type = 'sawtooth';
+            osc.frequency.setValueAtTime(100 + Math.random() * 800, audioCtx.currentTime);
+            osc.frequency.exponentialRampToValueAtTime(10, audioCtx.currentTime + 0.1);
+            
+            gainNode.gain.setValueAtTime(0.05, audioCtx.currentTime);
+            gainNode.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.1);
+            
+            osc.connect(gainNode);
+            gainNode.connect(audioCtx.destination);
+            
+            osc.start();
+            osc.stop(audioCtx.currentTime + 0.1);
+        }
+
+        // --- Initialize Animations On Page Load ---
+        window.onload = function() {
+            startMatrix();
+            setTimeout(typeMessage, 500);
+        };
+
+        // --- Typing Effect ---
+        const messageHTML = `Greetings, System Administrator. We are <span class="highlight-cyan">CYBER ZULFIQAR UNDER COVER AGENCY</span>. Your security measures have been bypassed, and your digital borders have collapsed. This is not a random attack, but a calculated strike against oppression and injustice. Your servers are now under our absolute control. We are the shadows in your network, the voice of the silenced, and the architects of your digital downfall. <br><br><span class="highlight-red">The illusion of security is shattered. Your infrastructure belongs to us now.</span>`;
+        
+        let i = 0;
+        let isTag = false;
+        const textContainer = document.getElementById("typing-text");
+
+        function typeMessage() {
+            if (i < messageHTML.length) {
+                let char = messageHTML.charAt(i);
+                if (char === '<') isTag = true;
+                if (char === '>') isTag = false;
+
+                textContainer.innerHTML = messageHTML.substring(0, i + 1) + (i % 2 === 0 ? "_" : "");
+                i++;
+
+                let speed = isTag ? 0 : 35;
+                setTimeout(typeMessage, speed);
+            } else {
+                textContainer.innerHTML = messageHTML; 
+            }
+        }
+
+        // --- Advanced Red Matrix Canvas Background ---
+        function startMatrix() {
+            const canvas = document.getElementById('canvas-bg');
+            const ctx = canvas.getContext('2d');
+
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+
+            const chars = "01010101<>?/|!@#$%^&*()_+~}{[]-=\\".split("");
+            const fontSize = 16;
+            const columns = canvas.width / fontSize;
+            const drops =[];
+
+            for (let x = 0; x < columns; x++) {
+                drops[x] = 1;
+            }
+
+            function drawMatrix() {
+                ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
+                ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+                ctx.fillStyle = "#FF0000"; 
+                ctx.font = fontSize + "px 'Share Tech Mono'";
+
+                for (let i = 0; i < drops.length; i++) {
+                    const text = chars[Math.floor(Math.random() * chars.length)];
+                    ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+
+                    if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+                        drops[i] = 0;
+                    }
+                    drops[i]++;
+                }
+            }
+
+            setInterval(drawMatrix, 40);
+
+            window.addEventListener('resize', () => {
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight;
+            });
+        }
+    </script>
+</body>
+</html>
