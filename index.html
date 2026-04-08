@@ -289,7 +289,7 @@
             // 1. Play Background Music
             const bgAudio = document.getElementById('bg-music');
             if (bgAudio.paused) {
-                bgAudio.volume = 0.8;
+                bgAudio.volume = 0.3;
                 bgAudio.play().catch(e => console.log("Audio play blocked"));
             }
             document.querySelector('.click-hint').style.display = 'none';
